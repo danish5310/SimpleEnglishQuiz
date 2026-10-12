@@ -258,6 +258,164 @@ button:hover {
 }
 
 
+/* MINI GAMES PAGE */
+
+.site-header {
+    background-color: #65c7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header .logo {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.hero.compact {
+    width: 100%;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero.compact h1 {
+    color: #1683bd;
+    font-size: 32px;
+}
+
+.hero.compact .eyebrow {
+    color: #1683bd;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.game-panel {
+    display: block;
+    position: static;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: bold;
+    color: #1683bd;
+}
+
+.progress-track {
+    height: 10px;
+    margin: 20px 0;
+    background-color: #eaf7ff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: #65c7f7;
+    transition: width 0.3s ease;
+}
+
+.match-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 25px auto;
+    background-color: #eaf7ff;
+    border-radius: 20px;
+    font-size: 80px;
+}
+
+.game-panel h2 {
+    color: #1683bd;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.choice-grid button {
+    width: 100%;
+    margin: 0;
+}
+
+.feedback {
+    min-height: 25px;
+    font-weight: bold;
+}
+
+.game-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.game-actions button {
+    margin: 5px;
+}
+
+.game-actions .secondary {
+    background-color: #9eabb3;
+}
+
+.game-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 12px;
+    }
+
+    .game-panel {
+        padding: 20px 15px;
+    }
+
+    .hero.compact h1 {
+        font-size: 26px;
+    }
+
+    .choice-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* RESULT */
 
 #result {
@@ -311,4 +469,6 @@ footer {
     .card {
         width: 90%;
     }
+
+
 }

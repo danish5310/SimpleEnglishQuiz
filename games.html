@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Games | English Fun Time</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="site-header">
+<a class="logo" href="index.html">🌈 English Fun Time</a>
+<nav>
+<a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="animal.html">Learn</a>
+        <a href="animal_facts.html">Animal Facts</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="games.html">Mini Games</a>
+</nav>
+</header>
+
+<main class="container">
+<section class="hero compact">
+<p class="eyebrow">PLAY AND LEARN</p>
+<h1>🧩 Word Matching Game</h1>
+<p>Look at the picture and choose the correct English word.</p>
+</section>
+<section class="card game-panel" id="gamePanel">
+<div class="game-top"><span id="gameProgress">Round 1 of 6</span><span id="gameScore">⭐ Score: 0</span></div>
+<div class="progress-track"><div id="progressFill" class="progress-fill"></div></div>
+<div class="match-picture" id="picture">✏️</div>
+<h2>What is this?</h2>
+<div id="choices" class="choice-grid"></div>
+<p id="feedback" class="feedback" aria-live="polite">Pick the correct word!</p>
+<div class="game-actions"><button class="button" id="nextButton" disabled>Next ➜</button><button class="button secondary" id="restartButton">↻ Start Again</button></div>
+</section>
+</main>
+
+<footer>Made for little learners 💙</footer>
+<script src="games.js"></script>
+</body>
+</html>
